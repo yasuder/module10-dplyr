@@ -18,8 +18,11 @@ library(fueleconomy)
 
 
 # Which Accura model has the best hwy MPG in 2015? (without method chaining)
-
-
+best.accura <- filter(vehicles, make == "Accura") %>% 
+  filter(year == 2015) %>% 
+  filter(average == max(average)) %>% 
+  select(id)
+print(best.accura)
 # Which Accura model has the best hwy MPG in 2015? (nesting functions)
 
 

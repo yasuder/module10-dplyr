@@ -17,10 +17,9 @@
 ## library(fueleconomy)
 
 # You should now have access to the `vehicles` data.frame
+View(vehicles)
 
-
-# Select the different manufacturers (makes) of the cars in this data set.
-
+# Select the different manufacturers (makes) of the cars in this data set. 
 
 # Use the `unique()` function to determine how many different car manufacturers
 # are represented by the data set.
