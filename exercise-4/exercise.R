@@ -24,7 +24,6 @@ flights <- mutate(flights, gain = arr_delay - dep_delay) %>%
   arrange(desc(gain))
 
 # Make a histogram of the amount of gain using the `hist()` function
-
 histogram.data <- hist(flights$gain)
 
 # On average, did flights gain or lose time?
